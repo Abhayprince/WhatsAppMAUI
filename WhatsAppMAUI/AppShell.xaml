@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="WhatsAppMAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:WhatsAppMAUI.Pages"
+    xmlns:local="clr-namespace:WhatsAppMAUI"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:ChatsPage}" Title="Chats" />
+            <ShellContent ContentTemplate="{DataTemplate pages:StatusPage}" Title="Status" />
+            <ShellContent ContentTemplate="{DataTemplate pages:CallsPage}" Title="Calls" />
+        </Tab>
+    </TabBar>
+
+</Shell>
